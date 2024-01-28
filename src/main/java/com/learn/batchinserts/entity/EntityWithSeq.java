@@ -21,7 +21,7 @@ public class EntityWithSeq {
 
   @Id
   @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "EWS_SEQ")
-  @SequenceGenerator(name = "EWS_SEQ", sequenceName = "sequence_table", allocationSize = 1)
+  @SequenceGenerator(name = "EWS_SEQ", sequenceName = "sequence_table", allocationSize = 100)
   private Long id;
 
   private String value;
